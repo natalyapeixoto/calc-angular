@@ -12,7 +12,7 @@ Aplicativo web desenvoldido para realizar operações matemáticas (adição, su
 
 ## Para rodar o projeto: 
 
-Requisitos: [Angular Cli]('https://cli.angular.io/') instalado. 
+Requisitos: [Angular Cli](https://cli.angular.io/) instalado. 
 
 ````git clone https://github.com/natalyapeixoto/calc-angular.git
  npm install 
