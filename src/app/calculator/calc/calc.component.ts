@@ -70,7 +70,6 @@ export class CalcComponent {
       const hist = document.querySelector('.historic__list')
       hist.innerHTML =''
     }
-    
 
     adding(firstNumber, secondNumber){
       return (parseInt(firstNumber) + parseInt(secondNumber)).toFixed(2)
