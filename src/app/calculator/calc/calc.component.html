@@ -1,0 +1,44 @@
+
+<main class='main'>
+
+    <div class='calc'>
+        <h1 class='calc__title'>Operações Matemáticas</h1>
+        <div class='calc__inputs'>
+            <div class='calc__input'>
+                <label>Digite um número</label>
+                <input (change)='getValue1($event)' type='number' placeholder= '0'>
+            </div>
+            <div class='calc__input'>
+                <label>Digite outro número</label>
+                <input (change)="getValue2($event)" type='number' placeholder= '0'>
+            </div>   
+        </div>  
+        
+        <div class='calc__controller'> 
+             
+            <select class='calc__controller-select'>
+                <option>Selecione uma operação</option>
+                <option value='+'>Adição</option>
+                <option value='-'>Subtração</option>
+                <option value='/'>Divisão</option>
+                <option value='x'>Multiplicação</option >
+            </select>
+        </div>
+        <button class='calc__controller-btn' (click)="operations($event)">Calcular</button>
+        <p class='calc__validation'></p>
+        <div class='calc__display'>
+            <h5>Resultado:</h5>
+            <p class='calc__display__content'>{{ result }}</p>
+        </div>
+    </div>
+
+    <div class='historic'>
+        <h4 class='show-historic__title' (click)='showHistory()' >Mostrar histórico de cálculos</h4>
+        <div class='historic__container'>
+            <p class='historic__cleaner' (click)='clearHistoric()'>Limpar histórico</p>
+          <ul class='historic__list'></ul>
+        </div>
+    </div>    
+    
+</main>
+
